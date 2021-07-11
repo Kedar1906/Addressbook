@@ -1,11 +1,11 @@
 pipeline {
     agent any
     tools{
-        maven 'MAVEN_HOME' 
-        jdk 'JAVA_HOME';
+        Maven 'MAVEN_HOME'
+        Java 'JAVA_HOME'
     }
     stages{
-        stage('build'){
+        stage('Build'){
             steps{
                 sh 'mvn clean package'
             }
