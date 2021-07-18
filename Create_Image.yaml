@@ -1,0 +1,9 @@
+---
+- name: Creating Image
+  hosts: localhost
+  tasks:
+   - name: Create Image
+     command: docker build -t kedar1906/AddressBook .
+   - name: Push Image
+     command: docker push kedar1906/Addressbook
+  
