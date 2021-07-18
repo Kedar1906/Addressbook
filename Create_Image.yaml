@@ -4,6 +4,8 @@
   tasks:
    - name: Create Image
      command: docker build -t kedar1906/addressbook .
+     args:
+      chdir: /opt/address-book
    - name: Push Image
      command: docker push kedar1906/addressbook
   
