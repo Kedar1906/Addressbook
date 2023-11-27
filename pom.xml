@@ -14,6 +14,14 @@
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
+	
+    <distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:/home/ubuntu/jenkins/workspace</url>
+       </repository>
+   </distributionManagement>
 
     <repositories>
         <repository>
